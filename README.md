@@ -4,7 +4,7 @@ KoBERT를 사용한 한국어 감정 분석
 ## 설명
 BERT는 Transformer의 인코더만을 이용해 양방향 사전학습을 진행한 언어 모델이다.
 본 프로젝트에서는 한국어 Bert 모델인 KoBERT를 사용하여 네이버 영화리뷰에 대한 감정 분석을 진행한다. 
-KoBERT는 SKTBrain에서 한국어 BERT 모델을 개선하기 위해 개발한 한국어 전용 BERT로 위키피디아와 뉴스 데이터를 기반으로 25백만 문장을 학습하였고 8,002개의 단어 리스트를 보유하고 있다.
+KoBERT는 SKTBrain에서 한국어 BERT 모델을 개선하기 위해 개발한 한국어 전용 BERT로 위키피디아와 뉴스 데이터를 기반으로 25백만 문장과 325백만 단어를 학습하였다. 
 
 ## Installation
 - Python 3.7
@@ -53,8 +53,9 @@ Naver sentiment movie corpus v1.0 : https://github.com/e9t/nsmc
  - gpu 사용한다. (cuda library)
  - Optimizer : AdamW
  - Loss 함수 : Cross entropy
- - Epoch : 4, Learning rate : 5e-5
- - Train 데이터로 학습하고 validation 데이터로 검증한다. 매 Epoch마다 loss, accuracy를 계산하여 학습을 검증한다.
+ - Epoch : 3,4,5 
+ - Learning rate : 5e-5~
+ - Train 데이터로 학습하고 validation 데이터로 검증한다. 매 Epoch마다 loss, f1-score, accuracy를 계산하여 학습을 검증한다.
 
 ## Test 실행
 - Train 데이터와 동일한 폴더에 Test할 데이터를 저장한다.
