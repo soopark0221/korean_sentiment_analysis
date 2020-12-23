@@ -74,7 +74,7 @@ Naver sentiment movie corpus v1.0 : https://github.com/e9t/nsmc
   - 단어임베딩과 attention mask를 만들고 학습 모델에 입력한다.
   - 출력값을 실제 데이터 label과 비교하여 모델의 성능을 테스트한다. 
   
-## Reference
+## Code Reference
  - KoBERT : https://github.com/SKTBrain/KoBERT.git
  - https://github.com/deepseasw/bert-naver-movie-review.git
  - https://mccormickml.com/2019/07/22/BERT-fine-tuning/
