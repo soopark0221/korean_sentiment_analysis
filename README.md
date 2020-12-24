@@ -4,6 +4,7 @@ KoBERT를 사용한 한국어 감정 분석
 ## 설명
 BERT는 Transformer의 인코더만을 이용해 양방향 사전학습을 진행한 언어 모델이다.
 본 프로젝트에서는 한국어 Bert 모델인 KoBERT를 사용하여 네이버 영화리뷰에 대한 감정 분석을 진행한다.  
+Document 입력에 대하여 label을 출력값으로 학습하고 unlabeled 데이터로 평가를 진행한다.
 
 ## Installation
  - Python 3.7
